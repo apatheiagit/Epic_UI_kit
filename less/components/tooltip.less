@@ -1,0 +1,40 @@
+.ui-tooltip, .arrow:after {
+  background: @brand-primary;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  font-family:@font-family-base;
+}
+.ui-tooltip {
+  padding: 10px;
+  color: white;
+  border-radius: @border-radius-base;
+}
+.arrow {
+  width: 70px;
+  height: 16px;
+  overflow: hidden;
+  position: absolute;
+  left: 50%;
+  margin-left: -35px;
+  bottom: -16px;
+  &.top{
+    top: -16px;
+    bottom: auto;
+  }
+  &.left {
+    left: 20%;
+  }
+  &:after {
+    content: "";
+    position: absolute;
+    left: 20px;
+    top: -20px;
+    width: 25px;
+    height: 25px;
+    transform: rotate(45deg);
+  }
+  &.top:after {
+    bottom: -20px;
+    top: auto;
+  }
+}

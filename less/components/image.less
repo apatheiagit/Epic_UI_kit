@@ -1,0 +1,87 @@
+.img-rounded{
+  border-radius: @border-radius-base;
+}
+.img--small{
+    max-width: @img-small-width;
+}
+.zoom-image{
+    display: block;
+    position: relative;
+    &:hover{
+        &:after{            
+            content: "";
+            display: block;
+            position: absolute;       
+            background: @sprite-path 0 0 no-repeat;       
+            left: 50%;
+            margin-left: -18px;
+            margin-top: -17px;
+            top: 50%;
+            width: 35px;
+            height: 36px;
+        }
+        &:before{
+            border-radius: @border-radius-base;
+            content: "";
+            display: block;
+            position: absolute;       
+            background: @image-caption-bg;       
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+        }
+    }
+    & img{
+        display: block;
+    }
+}
+.image-caption{
+    position: relative;
+    margin: 0;
+    & img{
+        display: block;
+    }
+    & .image-caption__text{
+        background: @image-caption-bg;
+        color: @image-caption-color;
+        position: absolute;
+        bottom: 0;
+        padding: 20px;
+        opacity: 0;
+    }
+    &:hover .image-caption__text{
+        opacity: 1;
+        transition: all 0.9s ease-in-out;
+    }
+}
+.image-descr{
+    position: relative;
+    margin: 0;
+    overflow: hidden;
+    & img{
+        display: block;
+        transition: all 0.3s ease-in-out;
+    }
+    & .image-descr__text{
+        background: @image-discr-bg;
+        border-radius: @border-radius-base;
+        border: 1px solid @image-discr-bcolor;
+        color: @image-discr-color;
+        position: absolute;
+        bottom: 0;
+        padding: 20px;
+        height: 100%;
+        display: block;
+        transform: translateX(-1*@img-small-width);
+        transition: all 0.3s ease-in-out;
+    }
+    &:hover {
+        & .image-descr__text{                    
+            transform: translateX(0px);
+        }
+        & img{
+            transform: translateX(@img-small-width);
+        }
+    }
+}

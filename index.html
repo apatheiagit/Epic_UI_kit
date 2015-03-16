@@ -1,0 +1,277 @@
+<!doctype html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/jquery-ui.min.css">
+	<link rel="stylesheet" href="css/style.css">
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script>
+    if (!window.jQuery) {
+        document.write('<script src="js/jquery-1.11.1.min.js"><\/script>');
+    }
+  </script>
+  <script src="js/jquery-ui-1.11.3.min.js"></script>
+  
+  <link rel="stylesheet" href="plugins/chosen/chosen.css">
+  <script src="plugins/chosen/chosen.jquery.min.js"></script>
+
+  <script src="plugins/owl/owl.carousel.min.js"></script>
+  
+  <script src="js/scripts.js"></script>
+</head>
+<body>
+	<div class="container">
+		<div class="row ">
+			<div class="col-1">1</div>
+			<div class="col-1">1</div>
+			<div class="col-1">1</div>
+			<div class="col-1">1</div>
+			<div class="col-1">1</div>
+			<div class="col-1">1</div>
+			<div class="col-1">1</div>
+			<div class="col-1">1</div>
+			<div class="col-1">1</div>
+			<div class="col-1">1</div>
+			<div class="col-1">1</div>
+			<div class="col-1">1</div>
+		</div>	
+		<h1>Типографика</h1>
+		<div class="row">
+			<div class="col-6">
+			<h2>Почему непредсказуемо легато?</h2>
+			<h3>Почему непредсказуемо легато?</h3>
+			<h4>Почему непредсказуемо легато?</h4>
+			<h5>Почему непредсказуемо легато?</h5>
+			</div>
+			<div class="col-6">
+			<p>Первая производная, общеизвестно, изменяет тригонометрический звукосниматель, что известно даже школьникам. Определитель системы линейных уравнений многопланово нейтрализует интеграл от функции, обращающейся в бесконечность вдоль линии, благодаря быстрой смене тембров (каждый инструмент играет минимум звуков).</p>
+			<p><a href="#">Ссылка</a></p>
+			</div>
+		</div>
+        <h1>Кнопки</h1>
+        <div class="row">
+            <div class="col-2"><a class="btn btn--default" href="#" role="button">Кнопка</a></div>
+            <div class="col-2"><button class="btn btn--grey" type="submit">Кнопка</button></div>
+            <div class="col-2"><input class="btn btn--orange" type="submit" value="Кнопка"></div>
+            <div class="col-2"><a class="btn btn--default btn--small" href="#" role="button">Кнопка</a></div>
+            <div class="col-2"><button class="btn btn--grey btn--small" type="submit">Кнопка</button></div>
+            <div class="col-2"><input class="btn btn--orange btn--small" type="submit" value="Кнопка"></div>
+        </div>
+        <h1>Картинки</h1>   
+        <div class="row">
+            <div class="col-3"><img src="tmp/pict1.jpg" class="img img-rounded img--small" alt=""/></div>
+            <div class="col-3"><a class="zoom-image" href="#"><img src="tmp/pict1.jpg" class="img img-rounded img--small" alt=""/></a></div>            
+            <div class="col-3">
+             <figure class="image-caption">
+                <img src="tmp/pict1.jpg" class="img img-rounded img--small" alt=""/>
+                <figcaption class="image-caption__text">Всплывашечка с подписью поверх фотографии</figcaption>
+             </figure>             
+            </div>
+            <div class="col-3">
+            <figure class="image-descr">
+                <img src="tmp/pict1.jpg" class="img img-rounded img--small" alt=""/>
+                <figcaption class="image-descr__text">При наведении фотография разворачивается, и на другой стороне оказывается текст</figcaption>
+             </figure>
+            </div>
+        </div>
+        <h1>Формы</h1>
+        <div class="row">
+          <div class="col-4">
+           <form action="#" class="block block--rounded ">
+             <div class="form-group"><input type="text" disabled class="form-control" value="Полковнику никто не пишет"></div>
+             <div class="form-group"><input type="text" class="form-control" value="Пишет!"></div>
+             <div class="form-group has-feedback has-error"><input type="text" class="form-control" value="Но не то"></div>
+             <div class="form-group has-feedback has-success"><input type="text" class="form-control" value="А, нет, все правильно"></div>
+           </form>
+          </div>
+          <div class="col-4">
+            <form action="#" class="block block--rounded">
+              <div class="form-group">
+              <select name="multi_select" multiple  id="multi_select" class="form-control-select">
+                <option value="1" selected="">Финн</option>
+                <option value="2">Джейк</option>
+                <option value="3">ПЖ</option>
+                <option value="4">Ледяной Король</option>
+                <option value="5">Марселин</option>
+              </select>
+              </div>
+              <div class="form-group">
+              <select name="single_select" id="single_select" class="form-control-select">
+                <option value="1">Пункт 1</option>
+                <option value="2">Пункт 2</option>
+                <option value="3">Пункт 3</option>
+                <option value="4">Пункт 4</option>
+              </select>
+            </div>
+            </form>
+          </div>
+          <div class="col-4">
+            <form action="#" class="block block--rounded ">
+            <div class="form-group">
+              <input type="radio" disabled class="form-radio" name="field" id="option1">
+              <label for="option1">Неактивно</label>
+            </div>
+            <div class="form-group">
+              <input type="radio" class="form-radio" name="field2" id="option2">
+              <label for="option2">Активно</label>
+            </div>
+            <div class="form-group">
+              <input type="checkbox" disabled class="form-checkbox" name="field3" id="option3">
+              <label for="option3">Неактивно</label>
+            </div>
+            <div class="form-group">
+              <input type="checkbox" class="form-checkbox" name="field4" id="option4">
+              <label for="option4">Активно</label>
+            </div>
+             <div class="form-group">
+              <input type="checkbox" disabled class="form-checkbox form-checkbox--switch" name="field5" id="option5">
+              <label for="option5">Неактивно</label>
+            </div>
+            <div class="form-group">
+              <input type="checkbox" class="form-checkbox form-checkbox--switch" name="field6" id="option6">
+              <label for="option6" >
+               Активно
+              </label>
+            </div>
+            </form>
+          </div>
+        </div>
+        <h1>Интерактив</h1>
+        <div class="row">
+          <div class="col-6">
+            <div id="owl-demo" class="owl-carousel owl-theme"> 
+              <div class="item"><img src="tmp/pict2.jpg" alt="The Last of us"></div>
+              <div class="item"><img src="tmp/pict3.jpg" alt="GTA V"></div>
+              <div class="item"><img src="tmp/pict2.jpg" alt="Mirror Edge"></div>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="block block--rounded block--inline">
+              <div class="quotation tooltip" title="Положение сложное, Соня">Любить значит страдать?</div>
+            </div>
+            <div class="block block--rounded">
+              <div id="tabs" class="tabs">
+                <ul>
+                  <li><a href="#tabs-1">Таб 1</a></li>
+                  <li><a href="#tabs-2">Таб 2</a></li>
+                  <li><a href="#tabs-3">Таб 3</a></li>
+                </ul>
+                <div id="tabs-1">
+                  <p>Первая производная, общеизвестно, изменяет тригонометрический звукосниматель, что известно даже школьникам. Определитель системы линейных уравнений многопланово нейтрализует интеграл от функции, обращающейся в бесконечность вдоль линии, благодаря быстрой смене тембров (каждый инструмент играет минимум звуков).</p>
+                </div>
+                <div id="tabs-2">
+                  <p>Morbi tincidunt, dui sit amet facilisis feugiat, odio metus gravida ante, ut pharetra massa metus id nunc. Duis scelerisque molestie turpis. Sed fringilla, massa eget luctus malesuada, metus eros molestie lectus, ut tempus eros massa ut dolor. Aenean aliquet fringilla sem. Suspendisse sed ligula in ligula suscipit aliquam. Praesent in eros vestibulum mi adipiscing adipiscing..</p>
+                </div>
+                <div id="tabs-3">
+                  <p>Mauris eleifend est et turpis. Duis id erat. Suspendisse potenti. Aliquam vulputate, pede vel vehicula accumsan, mi neque rutrum erat, eu congue orci lorem eget lorem. Vestibulum non ante. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce sodales. Quisque eu urna vel enim commodo pellentesque. Praesent eu risus hendrerit ligula tempus pretium. Curabitur lorem enim, pretium nec, feugiat nec, luctus a, lacus.</p>                
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <h1>Продвинутые формы</h1>
+        <div class="row">
+          <div class="col-6">
+            <div class="block block--rounded">              
+              <ol class="progress-stepper">
+                <li class="progress-done"> 
+                  <span class="step-name">Шаг 1</span>
+                </li>
+                <li class="progress-done">    
+                  <span class="step-name">Шаг 2</span>
+                </li>
+                <li>        
+                  <span class="step-name">Шаг 3</span>
+                </li>               
+              </ol>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="block block--rounded slider">
+              <span id="left-value" class="slider-value slider-value__left"></span>
+              <span id="right-value" class="slider-value slider-value__right"></span>              
+              <div id="slider-range"></div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-4">
+            <div class="block block--rounded">
+              <div class="progress-wrap">                
+                <div class="progress">                
+                  <div class="progress-bar" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" style="width: 30%;">                  
+                  </div>
+                </div>
+                <div class="progress-wrap__value progress-wrap__value--small progress-wrap__value--left">01:16</div>
+                <div class="progress-wrap__value progress-wrap__value--small progress-wrap__value--right">05:07</div>
+              </div>
+              <div class="progress-wrap">
+                <div class="progress-wrap__value progress-wrap__value--center">40%</div>
+                <div class="progress">                
+                  <div class="progress-bar" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%;">                  
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="block block--rounded">
+              <div class="switcher"><span class="switcher-variant selected">Выбрано</span><span class="switcher-variant">Не выбрано</span></div>
+            </div>
+          </div>
+          <div class="col-4"></div>
+        </div>
+        <h1>Дополнительно</h1>
+        <div class="row">
+          <div class="col-3">
+              <nav class="message-nav">
+                <div class="message-nav__title">Входящие сообщения</div>
+                <ul class="message-nav__list">
+                  <li class="message-nav__item message-nav__item--new"><span class="badge">32</span><a href="#">Новые</a></li>
+                  <li class="message-nav__item message-nav__item--important"><span class="badge">6</span><a href="#">Важные</a></li>
+                  <li class="message-nav__item message-nav__item--work"><span class="badge">4</span><a href="#">Работа</a>
+                    <ul class="message-nav__sublist">
+                      <li class="message-nav__subitem"><span class="badge badge-transparent">1</span><a href="">Забота</a></li>
+                      <li class="message-nav__subitem"><span class="badge badge-transparent">2</span><a href="">Зевота</a></li>
+                      <li class="message-nav__subitem"><span class="badge badge-transparent">1</span><a href="">Суббота</a></li>
+                    </ul>
+                  </li>
+                  <li class="message-nav__item message-nav__item--spam"><span class="badge"></span><a href="#">Спам</a></li>
+                  <li class="message-nav__item message-nav__item--garbage"><span class="badge">3</span><a href="#">Архив</a></li>
+                </ul>
+                <div class="message-nav__bottom"><a href="#">Показать все</a></div>
+              </nav> 
+          </div>
+          <div class="col-3">
+            <div class="block block--rounded block--square relative"><span class="ribbon"></span></div>
+            <div class="block--rounded">
+              <ol class="breadcrumb">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Library</a></li>
+                <li class="active">Data</li>
+              </ol>
+            </div>        
+          </div>
+          <div class="col-3">
+            <div class="block block--rounded block--square relative"><span class="ribbon ribbon--yellow"></span></div>
+            <div class="block block--rounded">              
+              <div class="star-rating">
+                <label for="whatever">Оцените:</label> 
+                <span class="star star-active" data-rating="1"></span>
+                <span class="star star-active" data-rating="2"></span>
+                <span class="star star-active" data-rating="3"></span>
+                <span class="star star-active" data-rating="4"></span>
+                <span class="star" data-rating="5"></span>
+                <input type="hidden" name="whatever" id="whatever" class="rating-value" value="3">
+              </div>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="block block--rounded block--square relative"><span class="ribbon ribbon--green"></span></div>
+          </div>
+        </div>        
+	</div>
+</body>
+</html>
